@@ -1,3 +1,11 @@
+![React](https://img.shields.io/badge/React-18.2-blue)
+![Tailwind](https://img.shields.io/badge/Tailwind-3.3-38B2AC)
+![License](https://img.shields.io/badge/License-Enterprise-green)
+
+
+
+
+
 # Enterprise Risk Management Pro - Next-Gen AI Platform
 
 🚀 **A stunning, AI-powered enterprise risk management platform built with cutting-edge web technologies**
