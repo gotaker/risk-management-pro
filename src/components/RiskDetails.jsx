@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { X, MessageSquare, Send, Calendar, User } from 'lucide-react';
 import { format } from 'date-fns';
 import { risksAPI, calculateRiskScore, getRiskLevel } from '../services/dataService';
-import { usersAPI } from '../services/dataService';
+import { getCurrentUser } from '../services/authService';
 
 const RiskDetails = ({ risk, onClose, onUpdate }) => {
   const [commentText, setCommentText] = useState('');
-  const currentUser = usersAPI.getCurrentUser();
+  const currentUser = getCurrentUser();
 
   const score = calculateRiskScore(risk.impact, risk.probability);
   const level = getRiskLevel(score);
